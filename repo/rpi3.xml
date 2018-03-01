@@ -5,6 +5,7 @@
 	<remote name="optee" fetch="https://github.com/OP-TEE" />
 	<remote name="raspberrypi" fetch="https://github.com/raspberrypi" />
 	<remote name="adjb" fetch="https://github.com/AdjustmentBeaver" />
+	<remote name="u-boot" fetch="https://github.com/u-boot" />
 
 	<default remote="optee" revision="master" />
 
@@ -33,7 +34,7 @@
 	<project remote="linaro-swg" path="optee_benchmark" name="optee_benchmark.git"/>
 
 	<!-- U-boot -->
-	<project remote="linaro-swg" path="u-boot" name="u-boot.git" revision="rpi3_initial_drop"/>
+	<project remote="u-boot" path="u-boot" name="u-boot.git" />
 
 	<!-- Sample applications -->
 	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
