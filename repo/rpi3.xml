@@ -34,7 +34,7 @@
 	<project remote="linaro-swg" path="optee_benchmark" name="optee_benchmark.git"/>
 
 	<!-- U-boot -->
-	<project remote="adjb" path="u-boot" name="u-boot.git" />
+	<project remote="adjb" path="u-boot" name="u-boot.git" revision="rpi3_initial_drop"/>
 
 	<!-- Sample applications -->
 	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
