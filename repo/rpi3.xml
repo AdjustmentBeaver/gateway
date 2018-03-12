@@ -21,7 +21,7 @@
 	<project path="optee_test" name="optee_test.git" />
 
 	<!-- Buildroot -->
-	<project remote="buildroot" path="buildroot" name="buildroot.git"
+	<project remote="buildroot" path="buildroot" name="buildroot"
 		revision="2018.02" />
 
 	<!-- ARM Trusted Firmware -->
