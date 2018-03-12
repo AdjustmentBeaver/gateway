@@ -5,7 +5,7 @@
 	<remote name="raspberrypi" fetch="https://github.com/raspberrypi" />
 	<remote name="adjb" fetch="https://github.com/AdjustmentBeaver" />
 	<remote name="u-boot" fetch="https://github.com/u-boot" />
-	<remote name="buildroot" fetch="https://git.buildroot.net" />
+	<remote name="buildroot" fetch="https://github.com/buildroot" />
 
 	<default remote="optee" revision="master" />
 
@@ -21,7 +21,7 @@
 	<project path="optee_test" name="optee_test.git" />
 
 	<!-- Buildroot -->
-	<project remote="buildroot" path="buildroot" name="buildroot"
+	<project remote="buildroot" path="buildroot" name="buildroot.git"
 		revision="2018.02.x" />
 
 	<!-- ARM Trusted Firmware -->
