@@ -5,7 +5,7 @@
 	<remote name="raspberrypi" fetch="https://github.com/raspberrypi" />
 	<remote name="adjb" fetch="https://github.com/AdjustmentBeaver" />
 	<remote name="u-boot" fetch="https://github.com/u-boot" />
-	<remote name="buildroot" fetch="https://git.buildroot.net/buildroot" />
+	<remote name="buildroot" fetch="https://git.buildroot.net" />
 
 	<default remote="optee" revision="master" />
 
@@ -22,7 +22,7 @@
 
 	<!-- Buildroot -->
 	<project remote="buildroot" path="buildroot" name="buildroot.git"
-		revision="2018.02.x" />
+		revision="2018.02" />
 
 	<!-- ARM Trusted Firmware -->
 	<project remote="linaro-swg" path="arm-trusted-firmware"
