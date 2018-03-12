@@ -22,7 +22,7 @@
 
 	<!-- Buildroot -->
 	<project remote="buildroot" path="buildroot" name="buildroot"
-		revision="2018.02" />
+		revision="2018.02.x" />
 
 	<!-- ARM Trusted Firmware -->
 	<project remote="linaro-swg" path="arm-trusted-firmware"
