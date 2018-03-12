@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote name="busybox_mirror" fetch="https://github.com/mirror" />
 	<remote name="linaro-swg" fetch="https://github.com/linaro-swg" />
 	<remote name="optee" fetch="https://github.com/OP-TEE" />
 	<remote name="raspberrypi" fetch="https://github.com/raspberrypi" />
 	<remote name="adjb" fetch="https://github.com/AdjustmentBeaver" />
 	<remote name="u-boot" fetch="https://github.com/u-boot" />
+	<remote name="buildroot" fetch="https://git.buildroot.net/buildroot" />
 
 	<default remote="optee" revision="master" />
 
 	<!-- Build -->
 	<project remote="adjb" path="build" name="build.git">
-		<linkfile src="rpi3.mk" dest="build/Makefile" />
-		<linkfile src="rpi3/debugger/pi3.cfg" dest="build/pi3.cfg" />
-		<linkfile src="../toolchains/aarch64/bin/aarch64-linux-gnu-gdb" dest="build/gdb" />
+		<linkfile src="../toolchains/aarch64/bin/aarch64-linux-gnu-gdb"
+			dest="build/gdb" />
 	</project>
 
 	<!-- OP-TEE gits -->
@@ -21,28 +20,20 @@
 	<project path="optee_client" name="optee_client.git" />
 	<project path="optee_test" name="optee_test.git" />
 
-	<!-- BusyBox -->
-	<project remote="busybox_mirror" path="busybox" name="busybox.git" revision="dbf5a6da6a4295ce26edd1ce34fde567d19afa02" />
+	<!-- Buildroot -->
+	<project remote="buildroot" path="buildroot" name="buildroot.git"
+		revision="2018.02.x" />
 
 	<!-- ARM Trusted Firmware -->
-	<project remote="linaro-swg" path="arm-trusted-firmware" name="arm-trusted-firmware.git" revision="1da4e15529a32fa244f5e3effc9a90549beb1a26"/>
-
-	<!-- Linux kernel -->
-	<project remote="linaro-swg" path="linux" name="linux.git" revision="rpi3-optee-4.6" />
-
-	<!-- Benchmark app -->
-	<project remote="linaro-swg" path="optee_benchmark" name="optee_benchmark.git"/>
+	<project remote="linaro-swg" path="arm-trusted-firmware"
+		name="arm-trusted-firmware.git" revision="rpi3_initial_drop"/>
 
 	<!-- U-boot -->
-	<project remote="adjb" path="u-boot" name="u-boot.git" revision="rpi3_initial_drop"/>
-
-	<!-- Sample applications -->
-	<project remote="linaro-swg" path="optee_examples" name="optee_examples.git" />
-
-	<!-- Filesystem -->
-	<project remote="linaro-swg" path="gen_rootfs" name="gen_rootfs.git" />
+	<project remote="adjb" path="u-boot" name="u-boot.git"
+		revision="rpi3_initial_drop"/>
 
 	<!-- Firmware -->
-	<project remote="raspberrypi" path="firmware" name="firmware.git" revision="refs/tags/1.20170215" clone-depth="1" />
+	<project remote="raspberrypi" path="firmware" name="firmware.git"
+		revision="refs/tags/1.20170215" clone-depth="1" />
 
 </manifest>
